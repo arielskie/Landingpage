@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABEFILM</title>
+<script src="https://kit.fontawesome.com/8ca23df693.js" crossorigin="anonymous"></script>
+    
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #111;
+    color: white;
+}
+
+header {
+    background-color: #111;
+    color: white;
+    height:50px;
+    
+}
+
+header .container {
+    display: block;
+    justify-content: space-between;
+    align-items: left;
+    padding: 0 2rem;
+}
+.container img{
+  position:absolute;
+  top:12px;
+  left:10px;
+  height:25px;
+}
+.container input{
+  margin-top:50px;
+  background-color:#313131;
+  border:none;
+  padding:15px 10px;
+  border-radius:25px;
+  width:95%;
+outline-color:green;
+color:white;
+}
+section {
+    padding: 4rem 0;
+    background-color:#111;
+}
+
+section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+#home {
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwV8Fwo0uXXfrVN-if3CH4o3JZ_nO3A8aucwdUIbcWWA1kJc945rrBPO4&s=10') no-repeat center center/cover;
+     padding:0;
+     margin:0;
+    color: white;
+    text-align: center;
+}
+.overlay{
+  width:100%;
+  height:100%;
+background-color:#060606d3;
+}
+#home .container {
+    padding-top: 0rem;
+    padding-bottom: 8rem;
+}
+
+#home h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#home p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+#home .btn {
+    background-color: #23ba42;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 1rem;
+}
+#features{
+  background-color:#111;
+  }
+#features .features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+#features .feature {
+    text-align: center;
+    padding: 2rem;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #222;
+}
+
+#contact{
+  margin-top:-50px;
+}
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: -2rem;
+}
+
+#contact input, #contact textarea {
+    padding: 1rem 0 1rem 0.8rem;
+    border: 1px solid #444;
+    border-radius: 5px;
+    width: 95.5%;
+    outline-color:green;
+    focus:none;
+    background-color: #111;
+    color: white;
+}
+
+#contact button {
+    background-color: #23ba42;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+@media (max-width: 768px) {
+    #features .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+      .carousel {
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .carousel-inner {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
+
+      .carousel-item {
+        min-width: 100%;
+        box-sizing: border-box;
+        position: relative;
+      }
+
+      .carousel img {
+        width: 100%;
+        max-height:150px;
+        border-radius:5px;
+        display: block;
+        box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.7);
+      }
+
+      .carousel-indicators {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .carousel-indicators li {
+        background-color: #bbb;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        margin: 0 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .carousel-indicators .active {
+        background-color: #717171;
+      }
+  .mycontainer{
+    padding:0 2rem;
+    margin:-50px 0 -100px; 0
+    
+  }
+  i{
+    font-size:30px;
+  }
+  .fa-credit-card{
+    color:orange;
+  }
+  .fa-rectangle-ad{
+    color:#ef2f2f;
+  }
+  .fa-comments{
+    color:deepskyblue;
+  }
+</style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEiSfXP2mrgzCN_WWKM7eCu0qB8Xc6cLpZtEItBwsUJqBWtuu0qP39J2l4lCyjJyhPw1Li9dXGbwWIIn658Y1Z9521C3LMCopwoX4v3EQKocpDQhs3WvF5SaN7CA3isUt5w_OiQ8Ji0xEp3kMsNE0FTYX51mjQvOlfqGdwMqLXx2Rtb3uAox1DAQlfcfpKA=w800"/>
+
+        </div>
+    </header>
+    <section id="home">
+      <div class="overlay">
+        <div class="container">
+            <h2>Unlimited Movies, TV Shows, and More</h2>
+            <p>Watch anywhere and anytime.</p>
+            <a href="https://abefilmstreamtv.blogspot.com/?m=1" class="btn">Start Watching</a>
+         </div>           
+        </div>
+    </section>
+     <section>
+        <div class="mycontainer">
+                 <h2>Trending</h2>
+    <div class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgzSTJBidMg503wQgGc3-QwNQdZkHJo28L-wYKJUJRnrnqY7IGu_vq4umIJ7a2motwzlJUM7wSjcsAzs7S3mDqjCg_aRQ-fEws3gUTt3iVZ8PftMhN5RdtG8446QT8ZRsSJgNrLV8u5pqf297L1_iP3-MdIZy61LmxYnpUQ8uopaValh9plEFX7Hn6eBys=s1200" alt="Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEiNqIHpGjxcSGPgYgaaWrJPSE0GcuS6pMewoDIIYnVdlowCxOHiulen0Vk95oijYNcHU3tGFub0TtHfjgRkFSQIQLXBKEluAbQWyAXr-B3KTBFWZfnyBQrouHW5aHq5EvPCg54zBwPpToACr8-W1SvK2ewtt644Y3LcP7V_Eopf1rJeeu73yZ3-9F1LAaE=s1600" alt="Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgqyFD9KBSm2EUZ12_LPLXApdnhTNJFQNyMJjgTtzRFplNYF7XoUIVqirMvscAwk6panjL_fft5sHU6Kzzw21iGHS9MUiyxbMtYeitMCfNw9FQBOGWOZA4IZxlYKkmacQ7wh-_PDCIP_UnEn6O9fFt_mqYbd9EWgALXPk8glR9SVGX9CrKQ1OMTQIfbDwE=s700" alt="Image 3">
+            </div>
+        </div>
+        <ul class="carousel-indicators">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    
+    </div>
+    </section>
+    
+    <section id="features">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="features-grid">
+                <div class="feature">
+                  <i class="fa-solid fa-credit-card fa-beat"></i>
+                    <h3>No Subscription</h3>
+                    <p>Watch your favorite Movies and Series for Free</p>
+                </div>
+                <div class="feature">
+                 <i class="fa-solid fa-rectangle-ad fa-fade"></i> 
+                    <h3>No Ads</h3>
+                    <p>Rest assured, our platform is free of ads</p>
+                </div>
+                <div class="feature">
+<i class="fa-solid fa-comments fa-shake"></i>
+                    <h3>Accept Request</h3>
+                    <p>Request your favorite Movies or Series for free</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="#">
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 ABEFILM. All rights reserved.</p>
+        </div>
+    </footer>
+      <script>
+      let currentIndex = 0;
+
+      function showNextImage() {
+          const carouselInner = document.querySelector('.carousel-inner');
+          const items = document.querySelectorAll('.carousel-item');
+          const indicators = document.querySelectorAll('.carousel-indicators li');
+          currentIndex = (currentIndex + 1) % items.length;
+          const offset = -currentIndex * 100;
+          carouselInner.style.transform = `translateX(${offset}%)`;
+
+          // Update active indicator
+          indicators.forEach((indicator, index) => {
+              indicator.classList.toggle('active', index === currentIndex);
+          });
+      }
+
+      setInterval(showNextImage, 3000); // Change image every 3 seconds
+    </script>
+</body>
+</html>
